@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel='stylesheet' href='style.css' />
+        <title>Q&A</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="qa active">
+                <div class="question">
+                    infinity代表什么数据？
+                </div>
+                <p class="answer">
+                    只读的全局变量，大于任何值，在溢出的时候返回该值
+                </p>
+                <button class="btn">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="qa">
+                <div class="question">
+                    JS什么时候会占CPU？
+                </div>
+                <p class="answer">
+                    页面在浏览器打开的时候，产生重绘，JS动画，以及定时器的时候
+                </p>
+                <button class="btn">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="qa">
+                <div class="question">
+                    什么是暂时性死区？
+                </div>
+                <p class="answer">
+                    ES6规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。
+                </p>
+                <button class="btn">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="qa">
+                <div class="question">
+                    如何监听浏览器窗口大小变化？
+                </div>
+                <p class="answer">
+                    window.onresize= () => {}
+                </p>
+                <button class="btn">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="qa">
+                <div class="question">
+                    监听指定cookie的变化？
+                </div>
+                <p class="answer">
+                    cookieStore.addEventListener('change', e => {})
+                </p>
+                <button class="btn">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+        </div>
+        <script src='main.js'></script>
+    </body>
+</html>

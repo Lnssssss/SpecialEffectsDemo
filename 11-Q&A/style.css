@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF0F5;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.qa{
+    border:lightcoral  1px solid;
+    padding:20px;
+    margin: 15px auto;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    max-width: 600px;
+}
+
+.qa.active{
+    box-shadow: 0 3px 3px #f5dfe6, 0 3px 6px #f5dfe6;
+    background-color: #FFFFFF;
+}
+
+.qa.active::before,
+.qa.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    color: lightblue;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.qa.active::before {
+    color: lavender;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.question{
+    padding: 5px 0 15px;
+}
+
+.answer{
+    font-size: 12px;
+    display: none;
+}
+
+.btn{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:20px;
+    font-size: 16px;
+    padding: 0;
+    transform: scale(0.98);
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    border:0;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn .fa-times{
+    display: none;
+}
+
+.qa.active .btn .fa-times{
+    display: block;
+    color: #F8F8FF;
+}
+
+.qa.active .answer{
+    display: block;
+}
+
+.qa.active .btn .fa-chevron-down{
+    display: none;
+}
+
+.qa.active .btn{
+    background-color: #555555;
+}
